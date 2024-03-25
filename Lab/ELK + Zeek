@@ -1,1 +1,15 @@
+### Installing elastic
+
+- To install elasticseach, follow the installation process on the elasticsearch documentation official page:
+https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html
+
+- The same for Kibana
+https://www.elastic.co/guide/en/kibana/current/install.html
+
+To enabling the writting rules features, be sure to set 32 string of character in the kibana config file `kibana.yml`.
+````
+# X-Pack Key 
+xpack.security.encryptionKey: "something_at_least_32_characters"
+````
+
 
