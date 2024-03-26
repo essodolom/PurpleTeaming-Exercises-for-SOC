@@ -19,6 +19,8 @@ https://medium.com/@cybertoolguardian/zeek-installation-in-ubuntu-60835ee3e42c
 
 ## Configure filebeat with Zeek
 Following  which kind of Zeek's logs (eg: conn.log, dns.log,...) you want to visualize in kibana, you can configure **filebeat** to chip these logs to kibana.
+
 Follow the detailed instructions on this link below to configure it:
+
 https://www.elastic.co/blog/collecting-and-analyzing-zeek-data-with-elastic-security
 
