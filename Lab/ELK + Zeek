@@ -12,11 +12,6 @@ To enabling the **writting rules features**, be sure to set 32 string of charact
 xpack.security.encryptionKey:"something_at_least_32_characters"
 ````
 
-
-
-
-
-
 ## Install Zeek
 
 You can follow the installation process on the following page : 
