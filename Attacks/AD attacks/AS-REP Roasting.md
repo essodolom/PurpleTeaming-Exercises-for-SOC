@@ -6,7 +6,7 @@ By default **preauthentication** is enabled by default in AD for all users. So w
 ![lab landscape](https://github.com/essodolom/PurpleTeaming-Exercises-for-SOC/blob/main/.Images/AD/config_asreproasting.png) 
 
 ## Execution
-After getting a list of a potential domain users of the target organisation by using some means, you can use it to execute the attack:
+  After getting a list of a potential domain users of the target organisation by using some means, you can use it to execute the attack:
 we can launch the attack from inside the domain. But in our case, we will do it from the outside if we assume that the traffic of our attacking machine is not filtered by the organization's firewall policies:
 We will use the Script ***GetNPUsers.py** of the impacket tool. This script will attempt to list and get TGTs for those users that have the property  **'Do not require Kerberos preauthentication' set (UF_DONT_REQUIRE_PREAUTH)**.
 
@@ -19,7 +19,8 @@ Then cracking the hash of the password obtained by using **hashcat**
 
 
 # Detection within the SIEM
-There are several means to detect this, for example by monitoring the number of logs regarding pre-authentication failure.
+
+  There are several means to detect this, for example by monitoring the number of logs regarding pre-authentication failure.
 but the most criterias that can enhance the accurate in the detection are:
  - Event ID = 4768
  - Ticket Encryption Type = 0x17 ( "0x17" is for *rc4 encryption* which is easier to crack. Therefore  it highly used by attackers)
@@ -37,15 +38,15 @@ but the most criterias that can enhance the accurate in the detection are:
 
  ### Create the Siem rule
  
-Now a rule can be created with considering the attack severity and frequency of the rule execution
+   Now a rule can be created with considering the attack severity and frequency of the rule execution
  
    ![lab landscape](https://github.com/essodolom/PurpleTeaming-Exercises-for-SOC/blob/main/.Images/AD/asrep_roasting_rule.png)
    
  ### Alert in the SIEM
  
-Now relaunch the attack and see the alert pop up in the SIEM
+     Now relaunch the attack and see the alert pop up in the SIEM
  
  ![lab landscape](https://github.com/essodolom/PurpleTeaming-Exercises-for-SOC/blob/main/.Images/AD/asrep_roasting_alert.png)
 
- *Thanks !!*
+   *Thanks !!*
    
