@@ -44,7 +44,7 @@ but the most criterias that can enhance the accurate in the detection are:
    
  ### Alert in the SIEM
  
-     Now relaunch the attack and see the alert pop up in the SIEM
+ Now relaunch the attack and see the alert pop up in the SIEM
  
  ![lab landscape](https://github.com/essodolom/PurpleTeaming-Exercises-for-SOC/blob/main/.Images/AD/asrep_roasting_alert.png)
 
